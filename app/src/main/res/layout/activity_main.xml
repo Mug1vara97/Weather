@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/temperatureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/weatherDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/temperatureTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="130pt">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/day1DateTextView"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/day1IconImageView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="0dp"/>
+
+                <TextView
+                    android:id="@+id/day1ForecastTextView"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/day2DateTextView"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/day2IconImageView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="0dp"/>
+
+                <TextView
+                    android:id="@+id/day2ForecastTextView"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/day3DateTextView"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/day3IconImageView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="0dp"/>
+
+                <TextView
+                    android:id="@+id/day3ForecastTextView"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/day4DateTextView"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/day4IconImageView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="0dp"/>
+
+                <TextView
+                    android:id="@+id/day4ForecastTextView"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/day5DateTextView"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/day5IconImageView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="0dp"/>
+
+                <TextView
+                    android:id="@+id/day5ForecastTextView"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
